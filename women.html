@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Women — Vintage Clothing · Réserve</title>
+  <meta name="description" content="20 vintage women's pieces — jackets, tees, denim, knitwear and more. One of each.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="catalog" data-gender="women">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <p class="eyebrow">The archive · Women</p>
+        <h1>Women</h1>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="container toolbar__inner">
+        <label class="visually-hidden" for="sort-select">Sort products</label>
+        <select class="sort-select" id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price — low to high</option>
+          <option value="price-desc">Price — high to low</option>
+          <option value="era-new">Newest era</option>
+        </select>
+        <span class="count" id="result-count"></span>
+      </div>
+    </div>
+
+    <section class="section container">
+      <div class="product-grid" id="catalog-grid"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserve — Vintage Clothing</title>
+  <meta name="description" content="Hand-picked vintage clothing. One of each piece, graded and photographed. Shop Men and Women.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1800&q=80&auto=format&fit=crop"
+             alt="Rails of vintage sportswear in a shop">
+      </div>
+      <div class="hero__inner container">
+        <p class="eyebrow">Vintage clothing · one of one</p>
+        <h1>The vintage archive.</h1>
+        <p>Forty pieces pulled from decades of tracksides, terraces and gym bags. Each one graded by hand, photographed as-is, and sold once.</p>
+        <div class="hero__cta">
+          <a class="btn" href="men.html">Shop Men</a>
+          <a class="btn btn--ghost" href="women.html">Shop Women</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">This week's pulls</p>
+          <h2>Featured pieces</h2>
+        </div>
+        <a class="link-arrow" href="men.html">View the full archive →</a>
+      </div>
+      <div class="product-grid" id="featured-grid"></div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story section">
+      <div class="container story__grid">
+        <div class="story__media">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1000&q=80&auto=format&fit=crop"
+               alt="Folded vintage jerseys and jackets">
+          <span class="stamp">Graded<br>by hand</span>
+        </div>
+        <div>
+          <p class="eyebrow">Why Réserve</p>
+          <h2>We only sell what we'd wear ourselves.</h2>
+          <p>Every jacket, hoodie and jersey is sourced in person across Europe, washed, measured and graded on a simple three-tier scale — Excellent, Very Good, Well-loved. What you see in the photos is the exact piece that ships. No restocks, no reproductions.</p>
+          <div class="stat-row">
+            <div><strong>40</strong><span>pieces live</span></div>
+            <div><strong>2</strong><span>sections</span></div>
+            <div><strong>1</strong><span>of each</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY SPLIT -->
+    <section class="section container">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Shop by section</p>
+          <h2>Find your fit</h2>
+        </div>
+      </div>
+      <div class="split">
+        <a class="split__card" href="men.html">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1100&q=80&auto=format&fit=crop" alt="Vintage men's sportswear">
+          <div>
+            <h3>Men</h3>
+            <p>Track jackets, anoraks, jerseys, hoodies and warm-up pants.</p>
+            <span class="link-arrow" style="color:#f6f0e4">Shop Men →</span>
+          </div>
+        </a>
+        <a class="split__card" href="women.html">
+          <img src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1100&q=80&auto=format&fit=crop" alt="Vintage women's sportswear">
+          <div>
+            <h3>Women</h3>
+            <p>Cropped track tops, baby tees, windbreakers and joggers.</p>
+            <span class="link-arrow" style="color:#f6f0e4">Shop Women →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <p class="eyebrow">The drop list</p>
+      <h2>New pulls, first look.</h2>
+      <p>We add pieces most weeks. Leave your email and we'll send the archive update before it goes public.</p>
+      <form id="newsletter-form" novalidate>
+        <label class="visually-hidden" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="you@example.com" autocomplete="email">
+        <button class="btn" type="submit">Join</button>
+      </form>
+      <p class="newsletter__done" id="newsletter-done" role="status"></p>
+    </div>
+  </section>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
