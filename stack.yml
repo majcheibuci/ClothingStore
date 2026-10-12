@@ -1,2 +1,5 @@
 version: '1'
-name: team-122
+endpoints:
+  - name: web
+    service: web
+    port: 80
